@@ -4,7 +4,7 @@
 
 ---
 
-![Logotype Plazmedia](./img/logotype.png)
+![Logotype Plazmedia](./img/plaz-img/logotype.png)
 
 [**Plazmedi&aring;® | Plazmedi&aring; LAB™ - 2019**](www.plazmedia.com.mx)
 

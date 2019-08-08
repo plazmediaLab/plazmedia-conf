@@ -135,5 +135,11 @@ img{
     -webkit-box-sizing: inherit;
             box-sizing: inherit;
 }
+/* ------ Solucionar Fix de los Floats ----- */
+.clearfix::after{
+    content: '';
+    clear: both;
+    display: block;
+}
 /* -------------------- ^ PLAZreset-CSS ^ -------------------- */
 /* =========================================================== */

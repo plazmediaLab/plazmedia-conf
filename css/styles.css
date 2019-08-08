@@ -1,0 +1,82 @@
+body{
+    background-color: var(--gary-85);
+}
+h2{
+    font-family: 'Oswald', sans-serif;
+}
+/* ---------------------------- */
+/* Header */
+/* --------ˇˇˇˇˇˇˇˇˇˇˇˇ-------- */
+div.hero{
+    background-image: url(../img/encabezado.jpg);
+    height: 100vh;
+    background-position: top center;
+    background-size: cover;
+}
+div.contenido-header{
+    padding-top: 4rem;
+}
+@media only screen and (min-width:768px){
+    div.contenido-header{
+        padding-top: 1rem;
+    }
+}
+nav.redes-sociales{
+    text-align: center;
+}
+nav.redes-sociales a{
+    color: var(--white);
+    font-size: 2rem;
+    margin-right: 2rem;
+}
+nav.redes-sociales a:last-child{
+    margin-right: 0;
+}
+div.informacion-evento{
+    text-align: center;
+    color: var(--white);
+}
+@media only screen and (min-width:768px){
+    div.informacion-evento{
+        width: 70%;
+        margin: 0 auto;
+        margin-top: 5rem;
+    }
+}
+div.informacion-evento p{
+    margin: 0;
+    display: inline;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+}
+div.informacion-evento p i{
+    color: var(--complementary);
+    font-size: 2.3rem;
+}
+p.fecha{
+    float: left;
+}
+p.ciudad{
+    float: right;
+    text-align: right;
+}
+h1.nombre-sitio{
+    font-family: 'PT Sans', sans-serif;
+    font-size: 7vw;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+@media only screen and (min-width:768px){
+    h1.nombre-sitio{
+        font-size: 8.5vw;
+        /* margin-bottom: 5rem; */
+    }
+}
+p.slogan{
+    font-family: 'Open Sans', sans-serif;
+    text-transform: none!important;
+}
+p.slogan span{
+    font-weight: bold;
+}
