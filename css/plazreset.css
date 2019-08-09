@@ -141,5 +141,12 @@ img{
     clear: both;
     display: block;
 }
+/* ------ Dmenciones de Contenedor ----- */
+.test{
+    background-color: rgba(73, 24, 250, .5)
+}
+.float-right{
+    float: right;
+}
 /* -------------------- ^ PLAZreset-CSS ^ -------------------- */
 /* =========================================================== */

@@ -3,7 +3,74 @@ body{
 }
 h2{
     font-family: 'Oswald', sans-serif;
+    font-size: 4rem;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1.3;
 }
+h2::after{
+    content: '';
+    margin: .5rem auto;
+    background-image: url(../img/separador.png);
+    height: 3rem;
+    width: 10rem;
+    display: block;
+}
+h3{
+    font-size: 2rem;
+    margin: 1rem 0;
+    font-family: 'PT Sans', sans-serif;
+    color: var(--orange);
+}
+.boton{
+    background-color: var(--relacionar);
+    padding: 1rem 5rem;
+    color: var(--white);
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.4rem;
+    margin-top: 2rem;
+    display: inline-block;
+    letter-spacing: .2rem;
+    transition: all .6s ease;
+}
+.boton:hover{
+    text-decoration: none;
+    cursor: pointer;
+    background-color: var(--relacionar-hover);
+}
+/* ---------------------------- */
+/* Globales */
+/* --------ˇˇˇˇˇˇˇˇˇˇˇˇ-------- */
+.contenedor{
+    width: 95%;
+    margin: 0 auto;
+}
+@media only screen and (min-width:480px){
+    .contenedor{
+        width: 95%;
+    }
+}
+@media only screen and (min-width:768px){
+    .contenedor{
+        width: 90%;
+    }
+}
+@media only screen and (min-width:992px){
+    .contenedor{
+        width: 90%;
+        max-width: 100rem;
+    }
+}
+.seccion{
+    padding: 3rem 0;
+}
+.seccion p{
+    font-size: 2rem;
+    text-align: center;
+}
+
 /* ---------------------------- */
 /* Header */
 /* --------ˇˇˇˇˇˇˇˇˇˇˇˇ-------- */
@@ -63,13 +130,15 @@ p.ciudad{
 }
 h1.nombre-sitio{
     font-family: 'PT Sans', sans-serif;
-    font-size: 7vw;
+    font-size: 10vw;
+    margin: 1rem;
+}
+h1.nombre-sitio span{
     text-transform: uppercase;
-    margin-bottom: 1rem;
 }
 @media only screen and (min-width:768px){
     h1.nombre-sitio{
-        font-size: 8.5vw;
+        font-size: 9vw;
         /* margin-bottom: 5rem; */
     }
 }
@@ -79,4 +148,170 @@ p.slogan{
 }
 p.slogan span{
     font-weight: bold;
+}
+
+/* ---------------------------- */
+/* Barra */
+/* --------ˇˇˇˇˇˇˇˇˇˇˇˇ-------- */
+div.barra{
+    background-color: var(--secondary);
+    padding: 2rem 0;
+}
+div.logo{
+    width: 75%;
+    float: left;
+}
+div.logo img{
+    width: 100%;
+}
+@media only screen and (min-width: 768px){
+    div.logo{
+        width: 30%;
+        margin-top: 1rem; 
+    }
+}
+/* ------ Navegación Principal ----- */
+nav.navegacion-principal{
+    display: none; 
+}
+nav.navegacion-principal a{
+    font-family: 'Oswald', sans-serif;
+    color: var(--white);
+    font-size: 2rem;
+    text-transform: uppercase;
+    transition: all .6s ease;
+    width: 100%;
+    display: block;
+    text-align: center;
+    margin-top: 1rem;
+}
+nav.navegacion-principal a:hover{
+    background-color: var(--complementary);
+    text-decoration: none;
+}
+nav.navegacion-principal a:last-child{
+    border: .2rem solid var(--complementary);
+}
+@media only screen and (min-width: 768px){
+    nav.navegacion-principal{
+        display: block;
+        width: 70%;
+        float: right; 
+        text-align: right;
+    }    
+    nav.navegacion-principal a{
+        display: inline-block;
+        padding: 1rem 2.5rem;
+        width: auto;
+        text-align: center;
+        margin-bottom: 0;
+    }
+}
+/* ------ Menú Movil ----- */
+div.menu-movil{
+    width: 5rem;
+    display: block;
+    float: right;
+    text-align: right;
+    margin-top: 1.2rem;
+    /* margin-bottom: 2rem; */
+}
+div.menu-movil:hover{
+    cursor: pointer;
+}
+@media only screen and (min-width: 768px){
+    div.menu-movil{
+        display: none;
+    }
+}
+div.menu-movil span{
+    height: .8rem;
+    margin-bottom: .6rem;
+    background-color: var(--white);
+    display: block;
+}
+
+/* ---------------------------- */
+/* Talleres */
+/* --------ˇˇˇˇˇˇˇˇˇˇˇˇ-------- */
+section.programa{
+    position: relative;
+}
+div.contenedor-video{
+    max-width: 100%;
+    overflow-x: hidden;
+}
+div.contenido-programa{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+div.programa-evento{
+    margin-top: 8rem;
+    background-color: rgba(255, 255, 255, .8);
+    padding: 1.5rem;
+}
+@media only screen and (min-width: 768px){
+    div.programa-evento{
+        width: 70%;
+    }
+}
+@media only screen and (min-width: 992px){
+    div.programa-evento{
+        width: 50%;
+    }
+}
+/* ------ Contenido Talleres ----- */
+nav.menu-programa{
+    width: 100%;
+    border-bottom: .1rem solid var(--plaz-color);
+    padding-bottom: .5rem;
+}
+@media only screen and (min-width: 768px){
+    nav.menu-programa{
+        display: table;
+    }
+}
+nav.menu-programa a{
+    display: block;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.9rem;
+    color: var(--secondary);
+}
+nav.menu-programa a:hover{
+    color: var(--plaz-color);
+    text-decoration: none;
+}
+@media only screen and (min-width: 768px){
+    nav.menu-programa a{
+        display: table-cell;
+    }
+}
+nav.menu-programa a i{
+    color: var(--plaz-color);
+    font-size: 2.5rem;
+    margin-right: .5rem;
+}
+
+/* ------ Detalle Evento ----- */
+div.detalle-evento{
+    margin: 2rem 0;
+    border-bottom: .1rem solid var(--gray-75);
+    padding-bottom: 1rem;
+}
+div.detalle-evento:nth-child(2){
+    border-bottom: none;
+    padding-bottom: 0;
+}
+div.detalle-evento p{
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+div.detalle-evento p i{
+    color: var(--orange);
+    font-size: 2rem;
+    margin-right: .5rem;
 }
