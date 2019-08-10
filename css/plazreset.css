@@ -3,7 +3,7 @@
     PLAZreset-CSS
     Plazmediå® 2019 · Plazmediå LAB™ 
     http://www.plazmedia.com.mx/home
-    v3.1 | 19220919
+    v3.2 | 19220919
     License: Copyright © · All rights reserved
 */
 /* =========================================================== */
@@ -137,18 +137,27 @@ img{
     -webkit-box-sizing: inherit;
             box-sizing: inherit;
 }
+
+/* ---------------------------- */
+/* Clasess */
+/* --------ˇˇˇˇˇˇˇˇˇˇˇˇ-------- */
+
 /* ------ Solucionar Fix de los Floats ----- */
 .clearfix::after{
     content: '';
     clear: both;
     display: block;
 }
-/* ------ Dmenciones de Contenedor ----- */
-.test{
-    background-color: rgba(73, 24, 250, .5)
-}
 .float-right{
     float: right;
+}
+.float-left{
+    float: left;
+}
+
+/* ------ Dimenciones de Contenedor ----- */
+.test{
+    background-color: rgba(73, 24, 250, .5)
 }
 /* -------------------- ^ PLAZreset-CSS ^ -------------------- */
 /* =========================================================== */
