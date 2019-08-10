@@ -13,6 +13,7 @@
 /* ---------- Colores Primarios ----------- */
     --plaz-color:               #4918FA;
     --secondary:                #181B32;
+    --secondary-alt:            #0F1125;
     --complementary:            #03CAD2;
 
 /* ------------- Degradado ---------------- */
@@ -43,6 +44,7 @@
     --gray-50:                  #7f7f7f;
     --gray-75:                  #bfbfbf;
     --gray-85:                  #d8d8d8;
+    --gray-95:                  #F1F1F1;
 }
 /*============================================================*/
 

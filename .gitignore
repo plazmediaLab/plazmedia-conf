@@ -1,5 +1,5 @@
-### Carpeta Vista Previa ###
-test/
+# ignore all files in the build/ directory
+./test/
 
 ### Windows ###
 # Windows thumbnail cache files

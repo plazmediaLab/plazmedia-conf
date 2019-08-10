@@ -1,5 +1,5 @@
 body{
-    background-color: var(--gary-85);
+    background-color: var(--gray-95);
 }
 h2{
     font-family: 'Oswald', sans-serif;
@@ -40,6 +40,24 @@ h3{
     cursor: pointer;
     background-color: var(--relacionar-hover);
 }
+.boton.hollow,
+.boton.hollow:hover{
+    background-color: var(--white);
+    color: var(--plaz-color);
+    border: .1rem solid var(--plaz-color);
+}
+.transparente{
+    background-color: transparent;
+    border: .1rem solid var(--white);
+}
+.transparente:hover{
+    border: .1rem solid var(--plaz-color);
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
 /* ---------------------------- */
 /* Globales */
 /* --------ˇˇˇˇˇˇˇˇˇˇˇˇ-------- */
@@ -76,25 +94,40 @@ h3{
 /* --------ˇˇˇˇˇˇˇˇˇˇˇˇ-------- */
 div.hero{
     background-image: url(../img/encabezado.jpg);
-    height: 100vh;
+    height: 85vh;
     background-position: top center;
     background-size: cover;
 }
 div.contenido-header{
-    padding-top: 4rem;
+    padding-top: 2rem;
 }
 @media only screen and (min-width:768px){
     div.contenido-header{
-        padding-top: 1rem;
+        padding-top: 2rem;
     }
 }
 nav.redes-sociales{
     text-align: center;
+    margin-bottom: 2rem; 
+}
+@media only screen and (min-width:768px){
+    nav.redes-sociales{
+        margin-bottom: 0rem; 
+    }
 }
 nav.redes-sociales a{
     color: var(--white);
-    font-size: 2rem;
-    margin-right: 2rem;
+    font-size: 2.5rem;
+    margin-right: 3rem;
+}
+@media only screen and (min-width:768px){
+    nav.redes-sociales a{
+        font-size: 2rem;
+        margin-right: 2rem;
+    }
+}
+nav.redes-sociales a:hover{
+    color: var(--complementary);
 }
 nav.redes-sociales a:last-child{
     margin-right: 0;
@@ -123,10 +156,20 @@ div.informacion-evento p i{
 }
 p.fecha{
     float: left;
+    padding-left: 1rem;
 }
 p.ciudad{
     float: right;
     text-align: right;
+    padding-right: 1rem;
+}
+@media only screen and (min-width:768px){
+    p.fecha{
+        padding-left: 0;
+    }
+    p.ciudad{
+        padding-right: 0;
+    }
 }
 h1.nombre-sitio{
     font-family: 'PT Sans', sans-serif;
@@ -144,10 +187,18 @@ h1.nombre-sitio span{
 }
 p.slogan{
     font-family: 'Open Sans', sans-serif;
+    font-size: 2rem!important;
     text-transform: none!important;
 }
 p.slogan span{
     font-weight: bold;
+    color: var(--complementary);
+    font-size: 3rem;
+}
+@media only screen and (min-width:768px){
+    p.slogan{
+        font-size: 3rem!important;
+    }
 }
 
 /* ---------------------------- */
@@ -314,4 +365,326 @@ div.detalle-evento p i{
     color: var(--orange);
     font-size: 2rem;
     margin-right: .5rem;
+}
+
+/* ---------------------------- */
+/* Invitados */
+/* --------ˇˇˇˇˇˇˇˇˇˇˇˇ-------- */
+ul.lista-invitados li{
+    padding: 1rem;
+    float: left;
+}
+@media only screen and (min-width: 480px){
+    ul.lista-invitados li{
+        width: 50%;
+    }
+}
+@media only screen and (min-width: 768px){
+    ul.lista-invitados li{
+        width: 33.3%;
+    }
+}
+div.invitado{
+    position: relative;
+    overflow: hidden;
+    line-height: 0;
+}
+div.invitado img{
+    max-width: 100%;
+    filter: gray;
+    -webkit-filter: grayscale(1);
+    transition: all .6s ease-in-out;
+}
+div.invitado:hover img{
+    -webkit-filter: grayscale(0);
+    -webkit-transform: scale(1.1);
+    cursor: pointer;
+}
+div.invitado p{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 2rem 3rem;
+    margin: 0;
+    background-color: rgba(0, 0, 0, .5);
+    width: 100%;
+    font-family: 'Oswald', sans-serif;
+    color: var(--complementary);
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    transition: all .4s ease-in-out;
+}
+div.invitado:hover p{
+    color: var(--white);
+}
+
+/* ---------------------------- */
+/* Contador */
+/* --------ˇˇˇˇˇˇˇˇˇˇˇˇ-------- */
+.parallax::before{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    filter: brightness(.7);
+}
+div.contador{
+    position: relative;
+    height: auto;
+}
+div.contador::before{
+    background-image: url(../img/bg-resumen.jpg);
+    content: '';
+}
+ul.resumen-evento{
+    position: relative;
+    padding: 12rem 0;
+}
+ul.resumen-evento li{
+    width: 50%;
+    float: left;
+    text-align: center;
+    color: var(--white);
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    font-size: 2rem;
+}
+@media only screen and (min-width: 768px){
+    ul.resumen-evento li{
+        width: 25%;
+    }
+}
+p.numero{
+    color: var(--orange);
+    font-size: 7rem;
+    display: block;
+    margin: 0;
+    line-height: 1;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+}
+
+/* ---------------------------- */
+/* Tabla De Precios */
+/* --------ˇˇˇˇˇˇˇˇˇˇˇˇ-------- */
+ul.lista-precios > li{
+    padding: 1rem;
+}
+@media only screen and (min-width: 768px){
+    ul.lista-precios > li{
+        float: left;
+        width: 33.3%;
+    }
+}
+div.tabla-precio{
+    border: .1rem solid var(--gray-75);
+    background-color: var(--white);
+    padding: 4rem 0;
+    text-align: center;
+    transition: all .4s ease;
+}
+div.tabla-precio:hover{
+    transform: scale(1.1);
+    border: .1rem solid var(--plaz-color);
+    box-shadow: 0 0 5rem rgba(0, 0, 0, .3);
+}
+div.tabla-precio ul li{
+    font-family: 'PT Sans', sans-serif;
+    font-size: 1.5rem;
+    margin: 2rem 0;
+    text-transform: uppercase;
+    color: var(--secondary);
+    line-height: 1;
+    font-weight: 700;
+}
+i.font-awesome{
+    color: var(--green);
+    font-size: 2rem;
+    margin-right: .5rem;
+}
+div.tabla-precio h3{
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+}
+div.tabla-precio p.numero{
+    color: var(--secondary);
+    margin: 2rem 0; 
+}
+
+/* ---------------------------- */
+/* Mapa */
+/* --------ˇˇˇˇˇˇˇˇˇˇˇˇ-------- */
+div.mapa{
+    height: 42rem;
+}
+
+/* ---------------------------- */
+/* Testimoniales */
+/* --------ˇˇˇˇˇˇˇˇˇˇˇˇ-------- */
+div.testimoniales{
+    padding-bottom: 2rem;
+}
+div.testimonial{
+    padding: .5rem;
+}
+@media only screen and (min-width: 768px){
+    div.testimonial{
+        float: left;
+        width: 33.3%;
+    }
+}
+blockquote{
+    background-color: var(--white);
+    border: .1rem solid var(--gray-75);
+    position: relative;
+    margin: 0 0 1rem 0;
+    padding-bottom: 2rem;
+}
+blockquote p{
+    text-align: justify!important;
+    font-size: 1.8rem!important;
+    font-family: 'PT Sans', sans-serif;
+    padding: 0 2rem 0 6.5rem;
+    line-height: 1.5;
+}
+blockquote p::before{
+    content: '\201c';
+    position: absolute;
+    left: 1rem;
+    top: .1rem;
+    font-size: 13rem;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    color: var(--plaz-color);
+}
+footer.info-testimonial{
+    padding: 0;
+}
+footer.info-testimonial img{
+    float: left;
+    width: 20%;
+    border-radius: 50%;
+    margin-left: 2rem;
+}
+footer.info-testimonial cite{
+    text-align: left;
+    color: var(--plaz-color);
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    padding-top: 1rem;
+    width: 66.6%;
+    float: right;
+    font-weight: bold;
+    font-style: normal;
+}
+footer.info-testimonial cite span{
+    color: var(--secondary);
+    display: block;
+    text-transform: none;
+    line-height: 1;
+}
+
+/* ---------------------------- */
+/* NewsLetter */
+/* --------ˇˇˇˇˇˇˇˇˇˇˇˇ-------- */
+div.newsletter{
+    position: relative;
+    height: auto;
+}
+div.newsletter::before{
+    background-image: url(../img/bg-newsletter.jpg);
+    content: '';
+}
+div.newsletter .contenido{
+    padding: 10rem 0;
+    color: var(--white);
+    text-align: center;
+    position: relative;
+}
+
+div.newsletter .contenido p{
+    font-size: 3.5rem;
+    text-transform: lowercase;
+    color: var(--complementary);
+}
+div.newsletter .contenido h3{
+    color: var(--white);
+    text-transform: none;
+    font-size: 7rem;
+    font-family: 'PT Sans', sans-serif;
+}
+div.newsletter .contenido h3 span{
+    color: var(--white);
+    text-transform: uppercase;
+    font-size: 7rem;
+    font-family: 'PT Sans', sans-serif;
+}
+
+/* ---------------------------- */
+/* Cuenta Regresiva */
+/* --------ˇˇˇˇˇˇˇˇˇˇˇˇ-------- */
+div.cuenta-regresiva ul li{
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 1rem;
+    font-weight: bold;
+}
+@media only screen and (min-width: 768px){
+    div.cuenta-regresiva ul li{
+        width: 25%;
+        float: left;
+    }
+}
+
+/* ---------------------------- */
+/* Footer */
+/* --------ˇˇˇˇˇˇˇˇˇˇˇˇ-------- */
+footer.site-footer{
+    background-color: var(--secondary);
+    padding-top: 4rem;
+    margin-top: 2rem;
+}
+footer .contenedor > div{
+    color: var(--white);
+    padding: 0 2rem;
+    font-size: 1.2rem;
+}
+@media only screen and (min-width: 768px){
+    footer .contenedor > div{
+        width: 33.3%;
+        float: left;
+    }
+}
+footer h3{
+    color: var(--white);
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    margin-bottom: 2rem;
+}
+footer h3 span{
+    color: var(--complementary);
+}
+footer .ultimos-tweets li{
+    margin-bottom: 1rem;
+}
+footer nav.redes-sociales{
+    text-align: left;
+}
+
+/* ------ Copyright ----- */
+p.copyright{
+    background-color: var(--secondary-alt);
+    color: var(--white);
+    padding: 1.5rem 0;
+    margin: 2rem 0 0 0;
+    text-align: center;
+    letter-spacing: .1rem;
 }
