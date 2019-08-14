@@ -292,7 +292,9 @@ section.programa{
 }
 div.contenedor-video{
     max-width: 100%;
+    height: 90rem;
     overflow-x: hidden;
+    overflow-y: hidden;
 }
 div.contenido-programa{
     position: absolute;
@@ -704,6 +706,10 @@ p.copyright{
 /* ---------------------------------------------------- */
 /* --------- Página Interna Registro -------------- */
 /* ------------------ˇˇˇˇˇˇˇˇˇˇˇˇ---------------------- */
+#error{
+    clear: both;
+    display: none;
+}
 form.registro h3{
     text-align: center;
     text-transform: uppercase;
@@ -715,8 +721,9 @@ form.registro label{
     font-weight: bold;
 }
 form.registro div.campo input{
-    padding: .5rem;
-    margin-left: 1rem;
+    padding: 1rem;
+    width: 100%;
+    /* margin-left: 1rem; */
 }
 h4{
     text-align: center;
@@ -753,7 +760,7 @@ div.paquetes .tabla-precio input{
 }
 .contenido-dia{
     padding: 2rem;
-
+    display: none;
 }
 @media only screen and (min-width:768px){
     .contenido-dia > div{
@@ -814,4 +821,22 @@ div.resumen input{
 }
 div.resumen input.boton{
     border: none;
+}
+
+/* ---------------------------- */
+/* Pago y Extras */
+/* --------ˇˇˇˇˇˇˇˇˇˇˇˇ-------- */
+#lista_productos{
+    display: none;
+    background-color: var(--gray-90);
+    padding: 2rem 2.5rem ;
+    border-radius: 1rem;
+}
+#suma_total{
+    padding: 1rem;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 4rem;
+    font-weight: bold;
+    color: var(--green);
 }

@@ -17,6 +17,11 @@
 <!-- -------------------ˇˇˇˇˇˇˇˇˇˇˇˇ--------------------- -->
     <link rel='stylesheet' href='./css/plazreset.css'><!-- Cargar PLAZreset -->
     <link rel='stylesheet' href='./css/styles.css'><!-- Cargar Estilos CSS -->
+
+<!-- ---------------------------------------------------- -->
+<!-- Mapa Leafletjs Stylesheet -->
+<!-- -------------------ˇˇˇˇˇˇˇˇˇˇˇˇ--------------------- -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" />
 </head>
 <body>
 
@@ -45,7 +50,9 @@
     <div class="barra">
         <div class="contenedor clearfix">
             <div class="logo">
-                <img src="img/plaz-img/logotype-white3.svg" alt="Logotipo">
+                <a href="index.html">
+                    <img src="img/plaz-img/logotype-white3.svg" alt="Logotipo">
+                </a>
             </div><!-- Logotipo -->
 
             <div class="menu-movil">
@@ -174,7 +181,7 @@
                             <li><i class="far fa-check-circle font-awesome"></i> Todas las Conferencias</li>
                             <li><i class="far fa-check-circle font-awesome"></i> Todos los Talleres</li>
                         </ul>
-                        <a href="#" class="boton hollow">Comprar</a>
+                        <a href="./pages/registro.html" class="boton hollow">Comprar</a>
                     </div>
                 </li><!-- Item 1 -->
                 <li>
@@ -186,7 +193,7 @@
                             <li><i class="far fa-check-circle font-awesome"></i> Todas las Conferencias</li>
                             <li><i class="far fa-check-circle font-awesome"></i> Todos los Talleres</li>
                         </ul>
-                        <a href="#" class="boton">Comprar</a>
+                        <a href="./pages/registro.html" class="boton">Comprar</a>
                     </div>
                 </li><!-- Item 2 -->
                 <li>
@@ -198,14 +205,14 @@
                             <li><i class="far fa-check-circle font-awesome"></i> Todas las Conferencias</li>
                             <li><i class="far fa-check-circle font-awesome"></i> Todos los Talleres</li>
                         </ul>
-                        <a href="#" class="boton hollow">Comprar</a>
+                        <a href="./pages/registro.html" class="boton hollow">Comprar</a>
                     </div>
                 </li><!-- Item 3 -->
             </ul>
         </div><!-- Cierre Contenedor -->
     </section><!-- Cierre Precios-Seccion -->
 
-    <div id="mapa" class="mapa test">
+    <div id="mapa" class="mapa">
 
     </div><!-- Cierre Mapa -->
 
@@ -293,5 +300,15 @@
         </p>
 
     </footer><!-- Cierre Site-Footer -->
+
+<!-- ---------------------------------------------------- -->
+<!-- Mapa Leafletjs Librería -->
+<!-- -------------------ˇˇˇˇˇˇˇˇˇˇˇˇ--------------------- -->
+    <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"></script>
+<!-- ---------------------------------------------------- -->
+<!-- Main JavaScript -->
+<!-- -------------------ˇˇˇˇˇˇˇˇˇˇˇˇ--------------------- -->
+    <script src="./js/main.js"></script>
+
 </body>
 </html>
