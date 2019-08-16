@@ -145,6 +145,7 @@ img{
 /* --------ˇˇˇˇˇˇˇˇˇˇˇˇ-------- */
 
 /* ------ Solucionar Fix de los Floats ----- */
+.clearfix::before,
 .clearfix::after{
     content: '';
     clear: both;
