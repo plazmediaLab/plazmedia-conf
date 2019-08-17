@@ -40,7 +40,7 @@
                         <p class="ciudad"><i class="fas fa-map-marker-alt"></i>Querétaro, MX</p>
                     </div>
                     <h1 class="nombre-sitio">Plazmedia<span>CONF</span></h1>
-                    <p class="slogan">Las mejores conferencias de <span>Diseño WEB</span></p>
+                    <p class="slogan">Las mejores conferencias de diseño <span>WEB</span></p>
                 </div><!-- Información Eventos -->
             </div><!-- Contenido Header -->
         </div><!-- Hero -->
@@ -88,11 +88,12 @@
                 <div class="programa-evento clearfix">
                     <h2>Programa del evento</h2>
                     <nav class="menu-programa">
-                        <a href="#"><i class="fas fa-code"></i> Talleres</a>
-                        <a href="#"><i class="fas fa-comment"></i> Conferencias</a>
-                        <a href="#"><i class="fas fa-university"></i> Seminarios</a>
-                    </nav>
-                    <div id="talleres" class="talleres" class="info-curso ocultar">
+                        <a href="#talleres"><i class="fas fa-code"></i> Talleres</a>
+                        <a href="#conferencias"><i class="fas fa-comment"></i> Conferencias</a>
+                        <a href="#seminarios"><i class="fas fa-university"></i> Seminarios</a>
+                    </nav><!-- Navegación -->
+
+                    <div id="talleres" class="talleres info-curso hide">
                         <div class="detalle-evento">
                             <h3>HTML5, CSS3 y JavaScriot</h3>
                             <p><i class="fas fa-university"></i> 16:00 hrs</p>
@@ -105,9 +106,40 @@
                             <p><i class="fas fa-calendar"></i> 10 de Dic.</p>
                             <p><i class="fas fa-user"></i> Juan Pablo de la Torre Valdez</p>
                         </div><!-- Evento 2 -->
-
                         <a href="#" class="boton float-right">Ver todos</a>
                     </div><!-- Cierre Talleres -->
+                    <div id="conferencias" class="talleres info-curso hide">
+                        <div class="detalle-evento">
+                            <h3>Como ser Freelancer</h3>
+                            <p><i class="fas fa-university"></i> 10:00 hrs</p>
+                            <p><i class="fas fa-calendar"></i> 10 de Dic.</p>
+                            <p><i class="fas fa-user"></i> Christian Nieves Uribe</p>
+                        </div><!-- Evento 1 -->
+                        <div class="detalle-evento">
+                            <h3>Tecnologías del Futuro</h3>
+                            <p><i class="fas fa-university"></i> 17:00 hrs</p>
+                            <p><i class="fas fa-calendar"></i> 10 de Dic.</p>
+                            <p><i class="fas fa-user"></i> Mark Zuckerberg</p>
+                        </div><!-- Evento 2 -->
+                        <a href="#" class="boton float-right">Ver todos</a>
+                    </div><!-- Cierre Conferencias -->
+                    <div id="seminarios" class="talleres info-curso hide">
+                        <div class="detalle-evento">
+                            <h3>Diseño UI/UX para Móviles</h3>
+                            <p><i class="fas fa-university"></i> 16:00 hrs</p>
+                            <p><i class="fas fa-calendar"></i> 10 de Dic.</p>
+                            <p><i class="fas fa-user"></i> Adrian Nieves Uribe SEC & Brand Manager</p>
+                        </div><!-- Evento 1 -->
+                        <div class="detalle-evento">
+                            <h3>Aprende a programar en una mañana</h3>
+                            <p><i class="fas fa-university"></i> 20:00 hrs</p>
+                            <p><i class="fas fa-calendar"></i> 10 de Dic.</p>
+                            <p><i class="fas fa-user"></i> Juan Pablo de la Torre Valdez</p>
+                        </div><!-- Evento 2 -->
+                        <a href="#" class="boton float-right">Ver todos</a>
+                    </div><!-- Cierre Semiinarios -->
+                        
+
                 </div><!-- Cierre Programa-Eventos -->
             </div><!-- Cierre Contenedor -->
         </div><!-- Contenido Programa -->
@@ -159,10 +191,10 @@
     <div class="contador parallax">
         <div class="contenedor">
             <ul class="resumen-evento clearfix">
-                <li><p class="numero">6</p> Invitados</li>
-                <li><p class="numero">15</p> Talleres</li>
-                <li><p class="numero">3</p> Días</li>
-                <li><p class="numero">9</p> Conferencias</li>
+                <li><p class="numero"></p> Invitados</li>
+                <li><p class="numero"></p> Talleres</li>
+                <li><p class="numero"></p> Días</li>
+                <li><p class="numero"></p> Conferencias</li>
             </ul>
         </div>
     </div><!-- Cierre Pallarax -->
@@ -260,10 +292,10 @@
         <h2>Faltan</h2>
         <div class="cuenta-regresiva contenedor">
             <ul class="clearfix">
-                <li><p  class="numero">80</p> Días</li>
-                <li><p  class="numero">15</p> Horas</li>
-                <li><p  class="numero">5</p> Minutos</li>
-                <li><p  class="numero">30</p> Degundos</li>
+                <li><p id="dias"  class="numero"></p> Días</li>
+                <li><p id="horas"  class="numero"></p> Horas</li>
+                <li><p id="minutos"  class="numero"></p> Minutos</li>
+                <li><p id="segundos"  class="numero"></p> Degundos</li>
             </ul>
         </div>
     </section><!-- Cierre Cuenta-Regresiva -->
@@ -304,6 +336,10 @@
 <!-- JQuery -->
 <!-- -------------------ˇˇˇˇˇˇˇˇˇˇˇˇ--------------------- -->
     <script src="./js/jquery.min.js"></script>
+<!-- Plugins -->
+    <script src="./js/plugins/jquery.animateNumber.min.js"></script>
+    <script src="./js/plugins/jquery.countdown.min.js"></script>
+    <script src="./js/plugins/jquery.lettering.js"></script>
 <!-- ---------------------------------------------------- -->
 <!-- Mapa Leafletjs Librería -->
 <!-- -------------------ˇˇˇˇˇˇˇˇˇˇˇˇ--------------------- -->

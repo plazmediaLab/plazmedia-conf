@@ -147,5 +147,3 @@
 
   }); // --------------- DOM Content Loaded ---------------
 })();
-
-console.log("Hola Mundo");

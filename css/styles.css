@@ -59,6 +59,51 @@ ul{
     margin: 0;
     padding: 0;
 }
+
+/* ------ Lettering ----- */
+h1.nombre-sitio span{
+    position: relative;
+    text-shadow: 0 0 3rem var(--secondary);
+}
+.char10, .char11, .char12, .char13{
+    font-family: 'Oswald', sans-serif;
+    font-size: 7vh;
+    color: #704afb;
+} 
+@media only screen and (min-width: 992px){
+    .char1{
+        top: 1rem; left: 0;
+    }    
+    .char2{
+        top: 1.5rem; left: -1rem;
+    }    
+    .char3{
+        top: .5rem; left: -2rem;
+    }    
+    .char4{
+        top: 1rem; left: -2.3rem;
+    }    
+    .char5{
+        top: 0; left: -3rem;
+    }    
+    .char6{
+        top: 1rem; left: -4rem;
+    }    
+    .char7{
+        top: 0; left: -5rem;
+    }    
+    .char8{
+        top: .5rem; left: -6.5rem;
+    }    
+    .char9{
+        top: 0; left: -7.5rem;
+    }    
+/* ------ CONF ----- */
+    .char10, .char11, .char12, .char13{
+        left: -5rem;
+        font-size: 11vw;
+    }    
+}
 /* ---------------------------- */
 /* Globales */
 /* --------ˇˇˇˇˇˇˇˇˇˇˇˇ-------- */
@@ -328,7 +373,6 @@ div.programa-evento{
 nav.menu-programa{
     width: 100%;
     border-bottom: .1rem solid var(--plaz-color);
-    padding-bottom: .5rem;
 }
 @media only screen and (min-width: 768px){
     nav.menu-programa{
@@ -341,6 +385,9 @@ nav.menu-programa a{
     font-family: 'Oswald', sans-serif;
     font-size: 1.9rem;
     color: var(--secondary);
+    margin: 1rem auto;
+    position: relative;
+    padding-bottom: 1rem;
 }
 nav.menu-programa a:hover{
     color: var(--plaz-color);
@@ -349,6 +396,18 @@ nav.menu-programa a:hover{
 @media only screen and (min-width: 768px){
     nav.menu-programa a{
         display: table-cell;
+    }
+    nav.menu-programa a.active::after{
+        position: absolute;
+        content: '';
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        width: 20px;
+        height: 10px;
+        background-image: url(../img/talleres-flecha.jpg);
+        bottom: -1rem;
     }
 }
 nav.menu-programa a i{
