@@ -609,6 +609,7 @@ div.tabla-precio p.numero{
 /* --------ˇˇˇˇˇˇˇˇˇˇˇˇ-------- */
 div.mapa{
     height: 42rem;
+    z-index: 5;
 }
 
 /* ---------------------------- */
