@@ -1,5 +1,26 @@
 $(document).ready(function(){
 
+  // --------------- Menú Fijo ---------------
+  let heroHeight = $('.hero').innerHeight();// Altura banner (hero)
+  let barraAltura = $('.barra').innerHeight();// Altura Berra Menú
+  
+  $(window).scroll(function(){
+    let scroll = $(window).scrollTop();
+    if(scroll > heroHeight){
+      $('.barra').addClass('fixed');
+      $('body').css({'margin-top': barraAltura + 'px'});
+    }else{
+      $('.barra').removeClass('fixed');  
+      $('body').css({'margin-top': '0px'});    
+    }
+  });
+
+  // --------------- Menú Responsivo ---------------
+
+  $('.menu-movil').on('click', function(){
+    $('.navegacion-principal').slideToggle();
+  });
+
   // --------------- Programa Conferencias ---------------
   $('.programa-evento .info-curso:first').show();
   $('.menu-programa a:first').addClass('active');
@@ -30,6 +51,7 @@ $(document).ready(function(){
     $('#segundos').html(event.strftime('%S'));
   });
 
+  // --------------- Plugin Lettering ---------------
   $('.nombre-sitio').lettering();
 
 });

@@ -260,6 +260,13 @@ div.barra{
     background-color: var(--secondary);
     padding: 2rem 0;
 }
+.fixed{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
 div.logo{
     width: 75%;
     float: left;
@@ -276,6 +283,7 @@ div.logo img{
 /* ------ Navegación Principal ----- */
 nav.navegacion-principal{
     display: none; 
+    width: 100%;
 }
 nav.navegacion-principal a{
     font-family: 'Oswald', sans-serif;
@@ -288,6 +296,7 @@ nav.navegacion-principal a{
     display: block;
     text-align: center;
     margin-top: 1rem;
+    padding: .5rem 0;
 }
 nav.navegacion-principal a:hover{
     background-color: var(--complementary);
@@ -771,6 +780,16 @@ p.copyright{
 /* ---------------------------------------------------- */
 /* --------- Página Interna Registro -------------- */
 /* ------------------ˇˇˇˇˇˇˇˇˇˇˇˇ---------------------- */
+/* ------ Galería ----- */
+body.conferencia .navegacion-principal .activo{
+    border-bottom: .3rem solid var(--complementary);
+}
+div.galeria{
+    display: inline-block;
+}
+
+
+/* ------ Registro ----- */
 #error{
     clear: both;
     display: none;
