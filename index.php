@@ -1,73 +1,4 @@
-<!DOCTYPE html>
-<html lang='es'>
-<head>
-    <meta charset='UTF-8'>
-    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-    <meta http-equiv='X-UA-Compatible' content='ie=edge'>
-    <meta name='theme-color' content='#2C09AD'/><!-- Cambiar Color de Navegador (Mobile) -->
-    <link rel='icon' href='./img/plaz-img/favicon2.ico' type='image/png' sizes='16x16'><!-- Cargar Fvicon -->
-    <title>Conferencias WEB</title><!-- Título -->
-<!-- ---------------------------------------------------- -->
-<!-- Font-Awesome | Google Fonts -->
-<!-- -------------------ˇˇˇˇˇˇˇˇˇˇˇˇ--------------------- -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald|PT+Sans&display=swap" rel="stylesheet"><!-- Google Font -->
-    <script src='https://kit.fontawesome.com/c762757b32.js'></script><!-- Font Awesome --> 
-<!-- ---------------------------------------------------- -->
-<!-- Hojas de Estilos CSS -->
-<!-- -------------------ˇˇˇˇˇˇˇˇˇˇˇˇ--------------------- -->
-    <link rel='stylesheet' href='./css/plazreset.css'><!-- Cargar PLAZreset -->
-    <link rel='stylesheet' href='./css/styles.css'><!-- Cargar Estilos CSS -->
-<!-- ---------------------------------------------------- -->
-<!-- Mapa Leafletjs Stylesheet -->
-<!-- -------------------ˇˇˇˇˇˇˇˇˇˇˇˇ--------------------- -->
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" />
-</head>
-<body>
-
-    <header class="site-header">
-        <div class="hero">
-            <div class="contenido-header">
-                <nav class="redes-sociales">
-                    <a href="#"><i class="fab fa-facebook"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
-                    <a href="#"><i class="fab fa-youtube"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                </nav>
-                <div class="informacion-evento">
-                    <div class="clearfix">
-                        <p class="fecha"><i class="fas fa-calendar-alt"></i>10-12-Dic</p>
-                        <p class="ciudad"><i class="fas fa-map-marker-alt"></i>Querétaro, MX</p>
-                    </div>
-                    <h1 class="nombre-sitio">Plazmedia<span>CONF</span></h1>
-                    <p class="slogan">Las mejores conferencias de diseño <span>WEB</span></p>
-                </div><!-- Información Eventos -->
-            </div><!-- Contenido Header -->
-        </div><!-- Hero -->
-    </header><!-- Cierre Header -->
-
-    <div class="barra">
-        <div class="contenedor clearfix">
-            <div class="logo">
-                <a href="index.html">
-                    <img src="img/plaz-img/logotype-white3.svg" alt="Logotipo">
-                </a>
-            </div><!-- Logotipo -->
-
-            <div class="menu-movil">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div><!-- Menú Mobíle -->
-
-            <nav class="navegacion-principal clearfix">
-                <a href="./pages/conferencias.html">Conferencia</a>
-                <a href="#">Calendario</a>
-                <a href="#">Invitados</a>
-                <a href="./pages/registro.html">Reservaciones</a>
-            </nav><!-- Navegación Desktop -->
-        </div><!-- Contenedor -->
-    </div><!-- Cierre Barra -->
+<?php include_once './includes/templates/header.php'; ?>
 
     <section class="seccion contenedor">
         <h2>La mejor conferencia de diseño web en español</h2>
@@ -106,7 +37,7 @@
                             <p><i class="fas fa-calendar"></i> 10 de Dic.</p>
                             <p><i class="fas fa-user"></i> Juan Pablo de la Torre Valdez</p>
                         </div><!-- Evento 2 -->
-                        <a href="#" class="boton float-right">Ver todos</a>
+                        <a href="registro.php" class="boton float-right">Ver todos</a>
                     </div><!-- Cierre Talleres -->
                     <div id="conferencias" class="talleres info-curso hide">
                         <div class="detalle-evento">
@@ -121,7 +52,7 @@
                             <p><i class="fas fa-calendar"></i> 10 de Dic.</p>
                             <p><i class="fas fa-user"></i> Mark Zuckerberg</p>
                         </div><!-- Evento 2 -->
-                        <a href="#" class="boton float-right">Ver todos</a>
+                        <a href="registro.php" class="boton float-right">Ver todos</a>
                     </div><!-- Cierre Conferencias -->
                     <div id="seminarios" class="talleres info-curso hide">
                         <div class="detalle-evento">
@@ -136,7 +67,7 @@
                             <p><i class="fas fa-calendar"></i> 10 de Dic.</p>
                             <p><i class="fas fa-user"></i> Juan Pablo de la Torre Valdez</p>
                         </div><!-- Evento 2 -->
-                        <a href="#" class="boton float-right">Ver todos</a>
+                        <a href="registro.php" class="boton float-right">Ver todos</a>
                     </div><!-- Cierre Semiinarios -->
                         
 
@@ -212,7 +143,7 @@
                             <li><i class="far fa-check-circle font-awesome"></i> Todas las Conferencias</li>
                             <li><i class="far fa-check-circle font-awesome"></i> Todos los Talleres</li>
                         </ul>
-                        <a href="./pages/registro.html" class="boton hollow">Comprar</a>
+                        <a href="registro.php" class="boton hollow">Comprar</a>
                     </div>
                 </li><!-- Item 1 -->
                 <li>
@@ -224,7 +155,7 @@
                             <li><i class="far fa-check-circle font-awesome"></i> Todas las Conferencias</li>
                             <li><i class="far fa-check-circle font-awesome"></i> Todos los Talleres</li>
                         </ul>
-                        <a href="./pages/registro.html" class="boton">Comprar</a>
+                        <a href="registro.php" class="boton">Comprar</a>
                     </div>
                 </li><!-- Item 2 -->
                 <li>
@@ -236,7 +167,7 @@
                             <li><i class="far fa-check-circle font-awesome"></i> Todas las Conferencias</li>
                             <li><i class="far fa-check-circle font-awesome"></i> Todos los Talleres</li>
                         </ul>
-                        <a href="./pages/registro.html" class="boton hollow">Comprar</a>
+                        <a href="registro.php" class="boton hollow">Comprar</a>
                     </div>
                 </li><!-- Item 3 -->
             </ul>
@@ -284,7 +215,7 @@
         <div class="contenido contenedor">
             <p>Regístrate al newsletter</p>
             <h3>Plazmedia <span>CAMP</span></h3>
-            <a href="#" class="boton transparente">Registro</a>
+            <a href="registro.php" class="boton transparente">Registro</a>
         </div>
     </div><!-- Cierre Parallax -->
 
@@ -300,58 +231,5 @@
         </div>
     </section><!-- Cierre Cuenta-Regresiva -->
 
-    <footer class="site-footer">
-        <div class="contenedor clearfix">
-            <div class="footer-informacion">
-                <h3>Sobre <span>PlazmediaCAMP</span></h3>
-                <p>Eius eaque delectus ea harum perferendis nesciunt impedit similique laudantium! Sapiente iste fugit, animi quisquam quibusdam voluptates perferendis quos repellendus ex inventore beatae placeat labore eaque! Blanditiis dolores minima, assumenda nam odit suscipit. Harum illum dicta laudantium inventore fuga quae.</p>
-            </div><!-- Cierre Información -->
-            <div class="ultimos-tweets">
-                <h3>Últimos <span>Tweets</span></h3>
-                <ul>
-                    <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt magni molestias, architecto maiores adipisci fugit.</li>
-                    <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt magni molestias, architecto maiores adipisci fugit.</li>
-                    <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt magni molestias, architecto maiores adipisci fugit.</li>
-                </ul>
-            </div><!-- Cierre Tweets -->
-            <div class="menu">
-                <h3>Redes <span>Sociales</span></h3>
-                <nav class="redes-sociales">
-                    <a href="#"><i class="fab fa-facebook"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
-                    <a href="#"><i class="fab fa-youtube"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                </nav>
-            </div><!-- Cierre Redes-Sociales -->
-        </div><!-- Cierre Site-Footer -->
 
-        <p class="copyright">
-            All Right Reserved · Copyright 2019 · Plazmedi&aring;&reg;
-        </p>
-
-    </footer><!-- Cierre Site-Footer -->
-
-<!-- ---------------------------------------------------- -->
-<!-- JQuery -->
-<!-- -------------------ˇˇˇˇˇˇˇˇˇˇˇˇ--------------------- -->
-    <script src="./js/jquery.min.js"></script>
-<!-- Plugins -->
-    <script src="./js/plugins/jquery.animateNumber.min.js"></script>
-    <script src="./js/plugins/jquery.countdown.min.js"></script>
-    <script src="./js/plugins/jquery.lettering.js"></script>
-<!-- ---------------------------------------------------- -->
-<!-- Mapa Leafletjs Librería -->
-<!-- -------------------ˇˇˇˇˇˇˇˇˇˇˇˇ--------------------- -->
-    <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"></script>
-<!-- ---------------------------------------------------- -->
-<!-- Local JavaScript -->
-<!-- -------------------ˇˇˇˇˇˇˇˇˇˇˇˇ--------------------- --> 
-    <!-- Carga Libreria Mapa -->
-    <script src="./js/map.js"></script>
-    <!-- Carga Main JavaScript -->
-    <script src="./js/main.js"></script>
-    <script src="./js/myJquety.js"></script>
-
-</body>
-</html>
+<?php include_once './includes/templates/footer.php'; ?>    

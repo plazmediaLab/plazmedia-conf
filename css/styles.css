@@ -124,7 +124,7 @@ h1.nombre-sitio span{
 @media only screen and (min-width:992px){
     .contenedor{
         width: 90%;
-        max-width: 100rem;
+        max-width: 105rem;
     }
 }
 .seccion{
@@ -609,6 +609,7 @@ div.tabla-precio p.numero{
 /* --------ˇˇˇˇˇˇˇˇˇˇˇˇ-------- */
 div.mapa{
     height: 42rem;
+    z-index: 5;
 }
 
 /* ---------------------------- */
